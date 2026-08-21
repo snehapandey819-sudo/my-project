@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'node index.js'
+               sh 'node index.js'
             }
         }
         stage('Deploy') {
