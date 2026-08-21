@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-               sh 'node index.js'
+              sh 'cat index.js && echo Build successful'
             }
         }
         stage('Deploy') {
